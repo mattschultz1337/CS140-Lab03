@@ -120,5 +120,205 @@ num_N</span></pre>
   
   
   
+<div class="post_region_content note" id="view_quesiton_note">
+        
+<h1 data-pats="title_text" class="post_region_title">lab03 B a54</h1>
 
+<div class="post_region_text" id="questionText"><p>&nbsp;</p><h1><strong>Lab03 B&nbsp;<strong>Due Date: Wednesday, September 13th, at 11:59 PM</strong></strong></h1>
+<h1>More practice with arrays and testing</h1>
+<p>The only method of the Arrays or System classes you may use is Arrays.toString. You may not use System.arraycopy or Arrays.copyOf.</p>
+<p>&nbsp;</p>
+<p dir="auto">Create a class&nbsp;<code>ArrayPractice</code>&nbsp;with the following methods (copy/paste):</p>
+<pre style="white-space: -moz-pre-wrap;white-space: -o-pre-wrap;white-space: pre-wrap;word-wrap: break-word;" class="prettyprint"><span class="com">/**
+ * Determines the average of the elements in a given array.
+ * @param array the array to inspect
+ * @return 0 if the array is empty
+ *         the average otherwise     
+ * @throws IllegalArgumentException if array is null 
+ */</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">double</span><span class="pln"> average</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> array</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="com">/**
+ * Computes an array which only contains the elements stored at even indices of 
+ * a given array.
+ * e.g. evenIndicesOnly({1,2,4,8,16}) should return {1,4,16}, 
+ * the integers at zeroth, second, and fourth indices
+ * @param array the array to extract all odd elements from
+ * @return the empty array if the array is empty
+ *         the null array if the array is null     
+ *         otherwise an array holding the elements located at even indices of the given
+ *         array
+ */</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> evenIndicesOnly</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> array</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="com">/**
+ * Determines if an array's elements are in strictly increasing order.
+ * The array {1, 2, 3, 4, 5} is in increasing order while
+ * the array {1, 2, 2, 4, 5} is not in increasing order as 2 == 2.
+ * A null or empty array is by default in increasing order.
+ * @param array the array to inspect
+ * @return true  if the array's elements are in increasing order,
+ *               or the array is null or empty
+ *         false otherwise
+ */</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">boolean</span><span class="pln"> isIncreasing</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> array</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="com">/**
+ * Computes the reverse an array.
+ * The reverse of a null array is null.
+ * The reverse of an empty array is the empty array.
+ * Do NOT use reverseInPlace in the implementation of reverse
+ * @param array the array whose elements are to be reversed
+ * @return an array holding the contents of array in reverse order
+ */</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> reverse</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> array</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="com">/**
+ * Computes an array that is all the elements of arr1 in the order they appear,
+ * followed by the elements of arr2 in the order they appear.
+ * An empty array should contribute no elements to the concatenated
+ * array.
+ * e.g. concatenate({6, 3, 8}, {10, 1, 7}) should return {6, 3, 8, 10, 1, 7}
+ * @param arr1 the first array
+ * @param arr2 the second array
+ * @return an array that is all the elements of arr1 in order,
+ *         followed by the elements of arr2 in order.
+ * @throws IllegalArgumentException if arr1 or arr2 is null
+ */</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> concatenate</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> arr1</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> arr2</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="com">/**
+ * Computes an array that is all the elements of arr1 in the order they appear,
+ * followed by the elements of arr2 in the reverse order they appear
+ * An empty array should contribute no elements to the resulting
+ * array.
+ * e.g. endToEnd({6, 3, 8}, {10, 1, 7}) should return {6, 3, 8, 7, 1, 10}
+ * HINT: this method can use other methods in this class to assist it.
+ *       ideally, this method is one short line of code.
+ * @param arr1 the first array
+ * @param arr2 the second array
+ * @return an array that is all the elements of arr1 in order,
+ * followed by the elements of arr2 in reverse order
+ * @throws IllegalArgumentException if arr1 or arr2 is null
+ */</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> endToEnd</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> arr1</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> arr2</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="com">/**
+ * Reverses the given array in-place.
+ * Zero credit if another array is made.
+ * The reverse of a null array is null.
+ * The reverse of an empty array is the empty array.
+ * Do NOT use reverse in the implementation of reverseInPlace
+ * HINT: since we cannot make another array, we will have to swap certain
+ *       elements one-by-one.
+ * @param array the array to reverse
+ */</span><span class="pln">
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> reverseInPlace</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> array</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+</span><span class="pun">}</span></pre>
+<p dir="auto">It is your job to implement (fill in) each method according to the Javadoc specification. Javadocs are a formatted comment style for commenting Java code. The first few lines of the Javadoc detail what the method does. Next, if there are any parameters, each parameter's name and any notes about it are detailed. If the method returns, the return value is described.</p>
+<p dir="auto"></p>
+<p dir="auto">Each method's Javadoc details the behavior of the method, including edge cases like null or empty arrays.</p>
+<p dir="auto"></p>
+<p dir="auto">You may find it helpful to draw diagrams of the arrays and scenarios on paper to draw inspiration on how to implement these methods.</p>
+<p dir="auto"></p>
+<p dir="auto">Now you must test the methods you have written to make sure they work. While testing may seem tedious, it is in your interest to test your code to know that it works. When you have written thorough tests that pass, you can be confident in your code's correctness. If you make a code change, you simply run the tests to see how if anything has shifted. Some people prefer to write the tests first, that way they always have some way to gauge their code progress.</p>
+<p dir="auto"></p>
+<p dir="auto">Create a class&nbsp;<code>ArrayPraticeTester</code>&nbsp;that will be used to test the methods you have written.</p>
+<p dir="auto"></p>
+<p dir="auto">Import&nbsp;<code>java.util.Arrays</code>&nbsp;and copy/paste the following line after importing&nbsp;<code>Arrays</code>:</p>
+<pre style="white-space: -moz-pre-wrap;white-space: -o-pre-wrap;white-space: pre-wrap;word-wrap: break-word;" class="prettyprint"><span class="kwd">import</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> lab03</span><span class="pun">.</span><span class="typ">ArrayPractice</span><span class="pun">.*;</span></pre>
+<p dir="auto">This will let you refer to the methods name without any classname prefix like so</p>
+<pre style="white-space: -moz-pre-wrap;white-space: -o-pre-wrap;white-space: pre-wrap;word-wrap: break-word;" class="prettyprint"><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> reversedArray </span><span class="pun">=</span><span class="pln"> reverse</span><span class="pun">(</span><span class="pln">someArray</span><span class="pun">);</span></pre>
+<p dir="auto">instead of having to do</p>
+<pre style="white-space: -moz-pre-wrap;white-space: -o-pre-wrap;white-space: pre-wrap;word-wrap: break-word;" class="prettyprint"><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> reversedArray </span><span class="pun">=</span><span class="pln"> </span><span class="typ">ArrayPractice</span><span class="pun">.</span><span class="pln">reverse</span><span class="pun">(</span><span class="pln">someArray</span><span class="pun">);</span></pre>
+<p dir="auto">each time you want to call a method in the&nbsp;<code>ArrayPractice</code>&nbsp;class.</p>
+<p dir="auto"></p>
+<p dir="auto">Copy/paste the following pre-written convenience methods inside&nbsp;<code>ArrayPracticeTester</code>.</p>
+<pre style="white-space: -moz-pre-wrap;white-space: -o-pre-wrap;white-space: pre-wrap;word-wrap: break-word;" class="prettyprint"><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> test</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> expected</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> actual</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Expected: "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> expected </span><span class="pun">+</span><span class="pln">
+                       </span><span class="str">", received: "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="typ">Arrays</span><span class="pun">.</span><span class="pln">toString</span><span class="pun">(</span><span class="pln">actual</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> test</span><span class="pun">(</span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> expected</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> actual</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Expected: "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="typ">Arrays</span><span class="pun">.</span><span class="pln">toString</span><span class="pun">(</span><span class="pln">expected</span><span class="pun">)</span><span class="pln"> </span><span class="pun">+</span><span class="pln">
+                       </span><span class="str">", received: "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> </span><span class="typ">Arrays</span><span class="pun">.</span><span class="pln">toString</span><span class="pun">(</span><span class="pln">actual</span><span class="pun">));</span><span class="pln">
+</span><span class="pun">}</span><span class="pln">
+
+</span><span class="kwd">public</span><span class="pln"> </span><span class="kwd">static</span><span class="pln"> </span><span class="kwd">void</span><span class="pln"> test</span><span class="pun">(</span><span class="kwd">boolean</span><span class="pln"> expected</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">boolean</span><span class="pln"> actual</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Expected: "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> expected </span><span class="pun">+</span><span class="pln"> </span><span class="str">", received: "</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> actual</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></pre>
+<p dir="auto">These methods can be used as helper functions by you to cut down on the repetition in your testing code. Anytime you find yourself repeating code, ask yourself what is the common portion of that code and see if you can extract that commonality into a function.</p>
+<p dir="auto"></p>
+<p dir="auto">Create a main method in&nbsp;<code>ArrayPracticeTester</code>&nbsp;where all your tests will go.</p>
+<p dir="auto"></p>
+<p dir="auto">Let's say I want to test if my methods work on a simple array. I could use the helper functions like so:</p>
+<pre style="white-space: -moz-pre-wrap;white-space: -o-pre-wrap;white-space: pre-wrap;word-wrap: break-word;" class="prettyprint"><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> simple </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">};</span><span class="pln">
+</span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> reversed </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">};</span><span class="pln">
+test</span><span class="pun">(</span><span class="pln">reversed</span><span class="pun">,</span><span class="pln"> reverse</span><span class="pun">(</span><span class="pln">simple</span><span class="pun">));</span><span class="pln">
+test</span><span class="pun">(</span><span class="pln">simple</span><span class="pun">,</span><span class="pln"> reverse</span><span class="pun">(</span><span class="pln">reversed</span><span class="pun">));</span><span class="pln">
+test</span><span class="pun">(</span><span class="kwd">true</span><span class="pun">,</span><span class="pln"> isIncreasing</span><span class="pun">(</span><span class="pln">simple</span><span class="pun">));</span><span class="pln">
+test</span><span class="pun">(</span><span class="kwd">false</span><span class="pun">,</span><span class="pln"> isIncreasing</span><span class="pun">(</span><span class="pln">reversed</span><span class="pun">));</span><span class="pln">
+
+</span><span class="com">// you could also do</span><span class="pln">
+test</span><span class="pun">(</span><span class="str">"{6, 5, 4, 3, 2, 1}"</span><span class="pun">,</span><span class="pln"> reverse</span><span class="pun">(</span><span class="pln">simple</span><span class="pun">));</span><span class="pln">
+test</span><span class="pun">(</span><span class="str">"{1, 2, 3, 4, 5, 6}"</span><span class="pun">,</span><span class="pln"> reverse</span><span class="pun">(</span><span class="pln">reversed</span><span class="pun">));</span><span class="pln">
+test</span><span class="pun">(</span><span class="str">"true"</span><span class="pun">,</span><span class="pln"> isIncreasing</span><span class="pun">(</span><span class="pln">simple</span><span class="pun">));</span><span class="pln">
+test</span><span class="pun">(</span><span class="str">"false"</span><span class="pun">,</span><span class="pln"> isIncreasing</span><span class="pun">(</span><span class="pln">reversed</span><span class="pun">));</span></pre>
+<p dir="auto">Each method should have multiple tests where each case outlined in the method's Javadoc is covered by some test (e.g. null, empty, etc...).</p>
+<p dir="auto"></p>
+<p dir="auto">The additional tests you need are:</p>
+<p dir="auto"></p>
+<p dir="auto">For&nbsp;<code>average</code>,&nbsp;<code>evenIndicesOnly</code><tt>,&nbsp;</tt><code>isIncreasing</code>,&nbsp;<code>reverse</code>, and&nbsp;<code>reverseInPlace</code>&nbsp;you should test proper handling of null and empty arrays.</p>
+<p dir="auto">For&nbsp;<code>concatenate</code>&nbsp;and&nbsp;<code>endToEnd</code>, you should test proper handling of empty arrays. Also test different combinations of array lengths.</p>
+<p dir="auto">For&nbsp;<code>reverse</code>&nbsp;and&nbsp;<code>reverseInPlace</code>&nbsp;you should test both even-length and odd-length arrays.</p>
+<p dir="auto"><code>reverseInPlace</code>&nbsp;is unique among all the other methods in that it does not return anything, it operates directly on the argument. Thus the use of the given helper test functions will have to change slightly:</p>
+<pre style="white-space: -moz-pre-wrap;white-space: -o-pre-wrap;white-space: pre-wrap;word-wrap: break-word;" class="prettyprint"><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> simple </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">};</span><span class="pln">
+reverseInPlace</span><span class="pun">(</span><span class="pln">simple</span><span class="pun">);</span><span class="pln">
+test</span><span class="pun">(</span><span class="str">"{6, 5, 4, 3, 2, 1}"</span><span class="pun">,</span><span class="pln"> simple</span><span class="pun">);</span><span class="pln">
+
+</span><span class="kwd">int</span><span class="pun">[]</span><span class="pln"> reversed </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">};</span><span class="pln">
+reverseInPlace</span><span class="pun">(</span><span class="pln">reversed</span><span class="pun">);</span><span class="pln">
+test</span><span class="pun">(</span><span class="str">"{1, 2, 3, 4, 5, 6}"</span><span class="pun">,</span><span class="pln"> reversed</span><span class="pun">);</span></pre>
+<p dir="auto"></p>
+<p dir="auto"><code>average, concatenate</code>&nbsp;and&nbsp;<code>endToEnd</code>&nbsp;are unique in that they may throw an exception if null is passed in as an array argument. We want to test this behavior on&nbsp;<b>all three</b>&nbsp;methods by providing a null argument and ensuring that the method throws an exception. We can do this for&nbsp;<code>concatenate</code>&nbsp;like so:</p>
+<pre style="white-space: -moz-pre-wrap;white-space: -o-pre-wrap;white-space: pre-wrap;word-wrap: break-word;" class="prettyprint"><span class="kwd">try</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    concatenate</span><span class="pun">(</span><span class="kwd">null</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">);</span><span class="pln">
+    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"test failed - exception not thrown"</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span><span class="pln"> </span><span class="kwd">catch</span><span class="pun">(</span><span class="typ">IllegalArgumentException</span><span class="pln"> e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"caught the expected illegal argument exception"</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}</span></pre>
+<p dir="auto">Your grade on this lab will heavily draw from your testing code. Please pay attention to each test case that is being asked for. No need to go overboard, just make sure you're providing all that is asked for. Write the tests for the desired behavior, even if your methods are incorrect and deviate in their behavior, the expected behavior has not changed.</p><br></div>
+<div data-pats="folders" class="post_region_folders">
+  <span>
+    <span data-pats="folders_item"><a data-pats="link" href="#" class="tag folder" onclick="PEM.fire('filterFeed', {filter:'folder',folder:'lab3'});return false;">lab3</a></span><span data-pats="folders_item"><a data-pats="link" href="#" class="tag folder" onclick="PEM.fire('filterFeed', {filter:'folder',folder:'a54'});return false;">a54</a></span>
+  </span>
+</div>
+<div class="attachments" style="display:none;">
+  <div class="attachments_divider"></div>
+  <div class="attachments_count">Attachments:</div>
+  <table class="attachments_list">
+    
+  </table>
+</div>
+<div class="post_region_message_wrapper">
+  <div id="endorse_text"></div>
+  
+  
+  
+
+      </div>
+    </div>
     
